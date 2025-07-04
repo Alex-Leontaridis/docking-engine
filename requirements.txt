@@ -1,13 +1,52 @@
 # Only standard library required for orchestrator and runners
 # Add model-specific dependencies here if needed in the future
 
-torch
-rdkit
-plip
-fpocket
-biopython
-pandas
-numpy
-scikit-learn
-openbabel
+# Core dependencies
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Structure prediction tools
+colabfold>=1.5.0
+fair-esm>=2.0.0
+torch>=1.12.0
+torchvision>=0.13.0
+torchaudio>=0.12.0
+
+# Molecular modeling
+rdkit-pypi>=2022.9.1
+biopython>=1.79
+openmm>=8.0.0
+mdtraj>=1.9.7
+
+# Affinity prediction
+boltz>=0.1.0
+
+# Data processing
+pyyaml>=6.0
+h5py>=3.7.0
+tables>=3.7.0
+
+# Visualization
+plotly>=5.10.0
+dash>=2.5.0
+dash-bootstrap-components>=1.2.0
+
+# Utilities
+tqdm>=4.64.0
+click>=8.1.0
+rich>=12.0.0
+colorama>=0.4.5
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Development
+black>=22.0.0
+flake8>=5.0.0
+mypy>=0.991
+
 # Placeholder for Boltz2 model dependencies (add here if/when available) 

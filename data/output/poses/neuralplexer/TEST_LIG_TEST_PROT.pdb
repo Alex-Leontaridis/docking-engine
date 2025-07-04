@@ -1,0 +1,19 @@
+REMARK  Mock NeuralPLexer pose prediction
+REMARK  Protein: test_protein.pdb
+REMARK  Ligand: test_ligand.sdf
+ATOM      1  N   ALA A   1      27.462  24.862   5.595  1.00 20.00           N  
+ATOM      2  CA  ALA A   1      26.336  25.823   5.456  1.00 20.00           C  
+ATOM      3  C   ALA A   1      25.085  25.194   6.089  1.00 20.00           C  
+ATOM      4  O   ALA A   1      24.000  25.806   6.000  1.00 20.00           O  
+ATOM      5  CB  ALA A   1      26.636  27.084   6.267  1.00 20.00           C  
+HETATM    6  C1  LIG A   2      24.500  25.500   7.200  1.00 20.00           C  
+HETATM    7  C2  LIG A   2      25.500  26.500   7.700  1.00 20.00           C  
+HETATM    8  C3  LIG A   2      26.500  26.000   8.200  1.00 20.00           C  
+HETATM    9  C4  LIG A   2      26.000  25.000   8.700  1.00 20.00           C  
+HETATM   10  C5  LIG A   2      25.000  24.500   8.200  1.00 20.00           C  
+CONECT    6    7    10
+CONECT    7    6     8
+CONECT    8    7     9
+CONECT    9    8    10
+CONECT   10    6     9
+END

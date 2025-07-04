@@ -1,0 +1,10 @@
+2025-07-04 19:28:04,353 INFO Running equibind for TEST_LIG and TEST_PROT
+2025-07-04 19:28:04,436 ERROR Failure: Command '['C:\\Python313\\python.exe', 'run_equibind.py', '--protein', 'data/test_protein.pdb', '--ligand', 'data/test_ligand.sdf', '--output', 'data/output/poses/equibind/TEST_LIG_TEST_PROT.pdb']' returned non-zero exit status 1.
+2025-07-05 00:17:56,174 INFO Running equibind for TEST_LIG and TEST_PROT
+2025-07-05 00:17:56,314 INFO Success: data/output/poses/equibind/TEST_LIG_TEST_PROT.pdb (runtime: 0.14s)
+2025-07-05 00:18:33,422 INFO Running equibind for TEST_LIG and TEST_PROT
+2025-07-05 00:18:33,560 INFO Success: data/output/poses/equibind/TEST_LIG_TEST_PROT.pdb (runtime: 0.14s)
+2025-07-05 00:37:44,318 INFO Running equibind for TEST_LIG and TEST_PROT
+2025-07-05 00:37:44,450 INFO Success: data/output/poses/equibind/TEST_LIG_TEST_PROT.pdb (runtime: 0.13s)
+2025-07-05 00:44:36,043 INFO Running equibind for TEST_LIG and TEST_PROT
+2025-07-05 00:44:36,183 INFO Success: data/output/poses/equibind/TEST_LIG_TEST_PROT.pdb (runtime: 0.14s)

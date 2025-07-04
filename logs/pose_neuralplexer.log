@@ -1,0 +1,10 @@
+2025-07-04 19:28:04,437 INFO Running neuralplexer for TEST_LIG and TEST_PROT
+2025-07-04 19:28:04,506 ERROR Failure: Command '['C:\\Python313\\python.exe', 'run_neuralplexer.py', '--protein', 'data/test_protein.pdb', '--ligand', 'data/test_ligand.sdf', '--output', 'data/output/poses/neuralplexer/TEST_LIG_TEST_PROT.pdb']' returned non-zero exit status 1.
+2025-07-05 00:17:56,314 INFO Running neuralplexer for TEST_LIG and TEST_PROT
+2025-07-05 00:17:56,463 INFO Success: data/output/poses/neuralplexer/TEST_LIG_TEST_PROT.pdb (runtime: 0.15s)
+2025-07-05 00:18:33,561 INFO Running neuralplexer for TEST_LIG and TEST_PROT
+2025-07-05 00:18:33,692 INFO Success: data/output/poses/neuralplexer/TEST_LIG_TEST_PROT.pdb (runtime: 0.13s)
+2025-07-05 00:37:44,451 INFO Running neuralplexer for TEST_LIG and TEST_PROT
+2025-07-05 00:37:44,583 INFO Success: data/output/poses/neuralplexer/TEST_LIG_TEST_PROT.pdb (runtime: 0.13s)
+2025-07-05 00:44:36,183 INFO Running neuralplexer for TEST_LIG and TEST_PROT
+2025-07-05 00:44:36,321 INFO Success: data/output/poses/neuralplexer/TEST_LIG_TEST_PROT.pdb (runtime: 0.14s)
