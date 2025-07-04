@@ -1,0 +1,13 @@
+# Only standard library required for orchestrator and runners
+# Add model-specific dependencies here if needed in the future
+
+torch
+rdkit
+plip
+fpocket
+biopython
+pandas
+numpy
+scikit-learn
+openbabel
+# Placeholder for Boltz2 model dependencies (add here if/when available) 

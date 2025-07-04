@@ -1,0 +1,53 @@
+name: docking-universal
+channels:
+  - conda-forge
+  - bioconda
+  - pytorch
+  - dglteam
+  - defaults
+
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - tqdm
+  - biopython
+  - rdkit
+  - pytorch
+  - torchvision
+  - dgl
+  - openbabel
+  # - fpocket  # removed, install from source for macOS ARM
+  - pdbfixer
+  - einops
+  - fairscale
+  - omegaconf
+  - hydra-core
+  - pytest
+  - hmmer
+  - hhsuite
+  - kalign2
+  - requests
+  # Add any other conda dependencies here
+  - pip:
+      - e3nn
+      - yacs
+      - pyaml
+      - pykeops
+      - py3Dmol
+      - wandb
+      - plip
+      - dllogger @ git+https://github.com/NVIDIA/dllogger.git
+      - openfold @ git+https://github.com/aqlaboratory/openfold.git@4b41059694619831a7db195b7e0988fc4ff3a307
+      - gradio==3.50.*
+      - deepspeed==0.5.9
+      - dm-tree==0.1.6
+      - ml-collections==0.1.0
+      - PyYAML==5.4.1
+      - typing-extensions==3.10.0.2
+      - pytorch_lightning==1.5.10
+      # Add any other pip dependencies here 
