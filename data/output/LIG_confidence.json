@@ -1,0 +1,78 @@
+{
+  "ligand_id": "LIG",
+  "confidence_score": 75,
+  "breakdown": {
+    "consensus": 1.0,
+    "druggability": 0.564,
+    "ligand_efficiency": 0.539,
+    "model_voting": 1.0,
+    "interaction_score": 0.0
+  },
+  "input_files": {
+    "consensus_json": "data/output/consensus/test_consensus.json",
+    "druggability_json": "outputs/druggability/test_complex.json",
+    "affinity_json": "outputs/test_boltz2_result.json",
+    "interaction_json": "outputs/interactions/TEST_LIG_TEST_PROT.json"
+  },
+  "input_data": {
+    "consensus": {
+      "ligand_id": "LIG",
+      "pose_files": [
+        "pose1.pdb",
+        "pose2.pdb"
+      ],
+      "failed_files": [],
+      "rmsd_threshold": 2.0,
+      "consensus_score": 1.0,
+      "mean_rmsd": 0.0,
+      "num_clusters": 1,
+      "cluster_assignments": {
+        "0": [
+          "pose1.pdb",
+          "pose2.pdb"
+        ]
+      },
+      "labels": [
+        0,
+        0
+      ],
+      "notes": "Consensus score = fraction of poses in largest cluster (RMSD \u2264 threshold)"
+    },
+    "druggability": {
+      "protein": "data/test_complex.pdb",
+      "protein_id": "TEST_PROT",
+      "ligand_id": "TEST_LIG",
+      "tool": "fpocket",
+      "fallback": true,
+      "mock_prediction": true,
+      "pocket_id": 1,
+      "druggability_score": 0.564,
+      "volume": 282.7890773245237,
+      "area": 1278.606821751367,
+      "opening": 1.7068788779156907,
+      "apol_area": 249.871364700773,
+      "hydrophobicity": 0.5869855463713389,
+      "polarity": 0.4047126946363213,
+      "error": "fpocket not installed",
+      "runtime_sec": 0.01
+    },
+    "affinity": {
+      "protein": "data/test_protein.fasta",
+      "ligand": "data/test_ligand.smi",
+      "protein_id": "TEST_PROT",
+      "ligand_id": "TEST_LIG",
+      "model": "Boltz2",
+      "fallback": true,
+      "mock_prediction": true,
+      "delta_g": -8.08,
+      "confidence": 0.695,
+      "runtime_sec": 23.95
+    },
+    "interaction": {
+      "H-bond": [],
+      "pi-pi": [],
+      "vdW": []
+    }
+  },
+  "notes": "Confidence score is a weighted composite of consensus, druggability, ligand efficiency, model voting, and interaction count."
+}

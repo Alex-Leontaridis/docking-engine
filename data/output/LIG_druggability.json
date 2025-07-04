@@ -1,0 +1,18 @@
+{
+  "protein": "data/test_complex.pdb",
+  "protein_id": "test_complex",
+  "ligand_id": "LIG",
+  "tool": "fpocket",
+  "fallback": true,
+  "mock_prediction": true,
+  "pocket_id": 1,
+  "druggability_score": 0.861,
+  "volume": 748.4012151202918,
+  "area": 1491.6968493161617,
+  "opening": 0.7103531393776373,
+  "apol_area": 107.85443962712718,
+  "hydrophobicity": 0.4828256634619471,
+  "polarity": 0.6688492477086647,
+  "error": "fpocket not installed",
+  "runtime_sec": 0.01
+}

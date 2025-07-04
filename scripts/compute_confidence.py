@@ -124,7 +124,16 @@ def main():
     # Load all input data
     consensus_json = load_json(args.consensus_json)
     druggability_json = load_json(args.druggability_json)
-    affinity_json = load_json(args.affinity_json)
+    affinity_json_path = args.affinity_json
+    if not os.path.exists(affinity_json_path):
+        # Try fallback
+        fallback_path = 'outputs/test_boltz2_result.json'
+        if os.path.exists(fallback_path):
+            print(f"[INFO] Affinity file not found, using fallback: {fallback_path}")
+            affinity_json_path = fallback_path
+        else:
+            raise FileNotFoundError(f"Affinity file not found: {affinity_json_path}")
+    affinity_json = load_json(affinity_json_path)
     interaction_json = load_json(args.interaction_json)
     # Compute all factors
     consensus = consensus_json.get("consensus_score", 0.0)

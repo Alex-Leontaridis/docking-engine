@@ -1,0 +1,2 @@
+ligand_id,confidence_score,consensus_score,druggability_score,affinity_kcal_per_mol,LE,model_voting,mean_rmsd,num_clusters,h_bonds,pi_pi,vdW,structure_source
+LIG,75,1.0,0.861,-8.08,0.539,1.0,0.0,1,,,,data/test_protein.fasta

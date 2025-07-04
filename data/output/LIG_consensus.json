@@ -1,0 +1,23 @@
+{
+  "ligand_id": "LIG",
+  "pose_files": [
+    "pose1.pdb",
+    "pose2.pdb"
+  ],
+  "failed_files": [],
+  "rmsd_threshold": 2.0,
+  "consensus_score": 1.0,
+  "mean_rmsd": 0.0,
+  "num_clusters": 1,
+  "cluster_assignments": {
+    "0": [
+      "pose1.pdb",
+      "pose2.pdb"
+    ]
+  },
+  "labels": [
+    0,
+    0
+  ],
+  "notes": "Consensus score = fraction of poses in largest cluster (RMSD \u2264 threshold)"
+}

@@ -1,0 +1,12 @@
+{
+  "protein": "data/test_protein.fasta",
+  "ligand": "data/test_ligand.smi",
+  "protein_id": "TEST_PROT",
+  "ligand_id": "TEST_LIG",
+  "model": "Boltz2",
+  "fallback": true,
+  "mock_prediction": true,
+  "delta_g": -8.08,
+  "confidence": 0.695,
+  "runtime_sec": 23.95
+}

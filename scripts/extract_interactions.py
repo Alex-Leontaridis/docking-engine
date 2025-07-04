@@ -60,7 +60,10 @@ def main():
     protein = args.protein
     output_dir = args.output_dir
     ensure_dir(output_dir)
-    output_json = os.path.join(output_dir, f"{ligand}_{protein}.json")
+    # Extract just the filename without path for the output name
+    ligand_name = os.path.basename(ligand).split('.')[0] if '.' in ligand else ligand
+    protein_name = os.path.basename(protein).split('.')[0] if '.' in protein else protein
+    output_json = os.path.join(output_dir, f"{ligand_name}_{protein_name}.json")
 
     if not os.path.isfile(pdb_path):
         print(f"[ERROR] PDB file not found: {pdb_path}")
