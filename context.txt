@@ -1,0 +1,31 @@
+"""
+PROJECT CONTEXT: Binding & Docking Insight Engine (Phase 2 – Convexia)
+
+This project aims to extend our docking pipeline into a pharma-style insight engine. 
+The system should be able to:
+- Integrate multiple ML models for pose prediction and affinity estimation
+- Parse molecular interactions and evaluate druggability
+- Compute consensus and confidence scores across models
+- Output interpretable results in both CSV and JSON formats
+
+Goals:
+- Improve the interpretability, reliability, and scientific rigor of compound screening
+- Make results decision-ready for medicinal chemists and drug discovery teams
+- Ensure fallback mechanisms and robust error handling at every step
+
+Model Roles:
+- DiffDock, EquiBind, NeuralPLexer-2, UMol: Pose prediction
+- Boltz2: Binding affinity (ΔG) prediction
+- AlphaFold2, OpenFold, ESMFold: Protein structure prediction (if PDB is missing)
+- PLIP (and RDKit fallback): Interaction parsing
+- Fpocket: Druggability scoring
+- Consensus + Confidence: Use RMSD, druggability, efficiency, and agreement between models
+
+Expected Outputs:
+- Structured `final_summary.csv` for downstream analysis
+- Per-ligand `summary.json` for consumption by insight dashboards or LLM agents
+
+The agent must be able to reason across heterogeneous model outputs, resolve conflicts, and produce scientifically valid, interpretable scores and summaries.
+
+This is part of Convexia’s internal research pipeline for decision-making at scale.
+"""
